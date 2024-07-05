@@ -1,0 +1,501 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    background: url('/InnoByte_june/Assets/header.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    
+}
+
+.nav__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__menu__btn {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__links li {
+    list-style: none;
+}
+
+.nav__links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: #ff6347;
+}
+
+.nav__btn {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nav__btn:hover {
+    background: #e5533d;
+}
+
+.header__container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.header__container p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.header__container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.header__container h1 span {
+    color: #ff6347;
+}
+
+.booking__form {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.booking__form .btn {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.booking__form .btn:hover {
+    background: #e5533d;
+}
+
+/* About Section */
+.about__container {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+    background: white;
+}
+
+.about__image img {
+    width:80px;
+    border-radius: 10px;
+}
+
+.about__content {
+    flex: 1;
+}
+
+.about__content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about__content p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.about__content .btn {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.about__content .btn:hover {
+    background: #e5533d;
+}
+.about__image{
+    width: 100%;
+    display: flex;
+}
+
+/* Room Section */
+.room__container {
+    padding: 3rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.room__container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.room__grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.room__card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.room__card:hover {
+    transform: translateY(-10px);
+}
+
+.room__card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room__card__details {
+    padding: 1rem;
+    text-align: left;
+}
+
+.room__card__details h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.room__card__details p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.room__card__details h5 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.room__card__details .btn {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.room__card__details .btn:hover {
+    background: #e5533d;
+}
+
+/* Service Section */
+.service__container {
+    padding: 3rem;
+    background: white;
+    text-align: center;
+}
+
+.service__container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service__list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service__list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.service__list li span {
+    color: #ff6347;
+    font-size: 1.5rem;
+}
+
+/* Banner Section */
+.banner__container {
+    padding: 3rem;
+    background: #ff6347;
+    color: white;
+    text-align: center;
+}
+
+.banner__content {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.banner__card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.banner__card h4 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner__card p {
+    font-size: 1rem;
+}
+
+/* Gallery Section */
+.container11 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.container11 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+.contactInfo1,
+.contactForm1 {
+    width: 100%;
+    padding: 2rem;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    background: white;
+}
+
+.contactInfo1 h2,
+.contactForm1 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contactInfo1 ul,
+.contactForm1 .formBox1 {
+    list-style: none;
+    padding: 0;
+}
+
+.contactInfo1 ul.info li,
+.contactForm1 .formBox1 .inputBox1 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contactInfo1 ul.info li span {
+    display: inline-block;
+    margin: 6px;
+    height: 30px;
+}
+
+.contactInfo1 ul.sci {
+    display: flex;
+    gap: 1rem;
+}
+
+.contactInfo1 ul.sci li {
+    list-style: none;
+}
+
+.contactForm1 .formBox1 .inputBox1 {
+    width: 100%;
+}
+
+.contactForm1 .formBox1 .inputBox1 input,
+.contactForm1 .formBox1 .inputBox1 textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contactForm1 .formBox1 .inputBox1 input[type="submit"] {
+    background: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contactForm1 .formBox1 .inputBox1 input[type="submit"]:hover {
+    background: #e5533d;
+}
+
+/* Map Section */
+.map-container {
+    margin: 3rem 0;
+}
+
+/* Footer Styles */
+.footer {
+    background: #333;
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer__container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.footer__col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer__col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.footer__col p {
+    margin-bottom: 1rem;
+}
+
+.footer__links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links a:hover {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__socials a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer__socials a:hover {
+    color: #ff6347;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.section__container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.about__image, .about__content {
+    flex: 1;
+    min-width: 300px; 
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.about__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+.about__content {
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__btn {
+    margin-top: 20px;
+}
+
+.about__btn .btn {
+    background-color: #007BFF; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.about__btn .btn:hover {
+    background-color: #0056b3; 
+}
